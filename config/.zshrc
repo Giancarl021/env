@@ -87,7 +87,7 @@ SPACESHIP_CHAR_SUFFIX=" "
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git autojump nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -123,21 +123,16 @@ export NVM_DIR="$HOME/.nvm"
 
 . /usr/share/autojump/autojump.sh
 
-    export PATH=$PATH:/home/giancarl021/.local/bin:/home/giancarl021/Documentos/apps
+export PATH=$PATH:$HOME/.local/bin
 eval "$(thefuck --alias)"
-. "$HOME/.cargo/env"
 
 alias bat="batcat"
 alias update="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y"
 alias magick="convert"
 alias cls="clear"
 alias python="python3"
-alias py="python"
+alias py="python3"
 alias droga="fuck"
-alias bloatwave="ssh giancarl021@ssh.giancarl021.com.br -p 80"
-alias genoo="source ~/Documentos/Git/genOO/generate.sh"
-alias homie="ssh giancarl021@192.168.0.112"
-alias moodle_reload="serve ~/Documentos/local/Witchcraft -p 5743"
 alias vim="nvim"
 
 ### Added by Zinit's installer

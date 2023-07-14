@@ -1,8 +1,8 @@
 function update_packages() {
-  apt-get update > /dev/null
-  apt-get upgrade --yes > /dev/null
-  apt-get auto-remove --yes > /dev/null
-  apt-get clean > /dev/null
+  apt-get update
+  apt-get upgrade --yes
+  apt-get auto-remove --yes
+  apt-get clean
 }
 
 function fatal_error() {

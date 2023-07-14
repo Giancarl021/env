@@ -2,7 +2,7 @@ FONT_NAME="JetBrains Mono"
 FONT_DIR="jetbrains-mono"
 FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.2/JetBrainsMono.zip"
 
-echo "Installing the Nerd Font $FONT_NAME..."
+log "Installing the Nerd Font $FONT_NAME..."
 
 FONT_DIRECTORY="$TMP_DIRECTORY/font"
 FONT_PATH="$FONT_DIRECTORY/nerd-font.zip"
@@ -29,6 +29,6 @@ rm -rf $FONT_DIRECTORY
 
 log "Reseting the system font cache..."
 
-fc-cache -f
+fc-cache -fv
 
 log "Font $FONT_NAME installed on your system!"
