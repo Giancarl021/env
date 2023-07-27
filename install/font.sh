@@ -27,8 +27,10 @@ log "Removing remanescent files..."
 
 rm -rf $FONT_DIRECTORY
 
-log "Reseting the system font cache..."
-
-fc-cache -fv
+if [[ "$(command -v fc-cache)" ]]
+then
+  log "Reseting the system font cache..."
+  fc-cache -fv
+fi
 
 log "Font $FONT_NAME installed on your system!"
