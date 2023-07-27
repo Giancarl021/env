@@ -10,7 +10,7 @@ yes | cp "$INSTALL_ZSH_PARENT_PATH/../config/.zshrc" "$USER_HOME/.zshrc"
 
 log "Installing Oh My ZSH! framework..."
 
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | bash -s -- --unattended
 
 log "Installing Spaceship theme..."
 
