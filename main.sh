@@ -5,11 +5,6 @@ source "$ROOT_PARENT_PATH/util/functions.sh"
 source "$ROOT_PARENT_PATH/util/functions.sh"
 source "$ROOT_PARENT_PATH/util/globals.sh"
 
-if [[ $(id -u) -ne 0 ]]
-then
-  fatal_error "This script must be ran as 'root'"
-fi
-
 log 'Starting environment installation process...'
 
 log "Updating APT packages..."
