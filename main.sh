@@ -34,7 +34,7 @@ INSTALLATION_FILES=(
   "autojump"
 )
 
-for $FILE in ${INSTALLATION_FILES[@]}
+for FILE in ${INSTALLATION_FILES[@]}
 do
   source "$ROOT_PARENT_PATH/install/$FILE.sh"
 done
