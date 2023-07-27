@@ -4,12 +4,12 @@ log "Installing tmux..."
 
 apt-get install tmux --yes
 
-TMUX_CONFIG_DIRECTORY="$USER_HOME/.config/tmux"
+TMUX_CONFIG_DIRECTORY="$HOME/.config/tmux"
 
 mkdir -p "$TMUX_CONFIG_DIRECTORY"
 
 yes | cp "$INSTALL_TMUX_PARENT_PATH/../config/tmux/tmux.conf" "$TMUX_CONFIG_DIRECTORY"
 
-git clone "https://github.com/tmux-plugins/tpm" "$USER_HOME/.tmux/plugins/tpm"
+git clone "https://github.com/tmux-plugins/tpm" "$HOME/.tmux/plugins/tpm"
 
 log "TMUX and it's dependencies installed"

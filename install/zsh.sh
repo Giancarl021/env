@@ -6,7 +6,7 @@ apt-get install zsh --yes
 
 chsh -s "$(which zsh)" $SUDO_USER
 
-yes | cp "$INSTALL_ZSH_PARENT_PATH/../config/.zshrc" "$USER_HOME/.zshrc"
+yes | cp "$INSTALL_ZSH_PARENT_PATH/../config/.zshrc" "$HOME/.zshrc"
 
 log "Installing Oh My ZSH! framework..."
 
