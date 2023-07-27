@@ -1,5 +1,5 @@
 log "Installing autojump..."
 
-apt-get install autojump --yes
+sudo apt-get install autojump --yes
 
 log "Autojump installed"

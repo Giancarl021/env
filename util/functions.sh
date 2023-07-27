@@ -1,8 +1,8 @@
 function update_packages() {
-  apt-get update
-  apt-get upgrade --yes
-  apt-get auto-remove --yes
-  apt-get clean
+  sudo apt-get update
+  sudo apt-get upgrade --yes
+  sudo apt-get auto-remove --yes
+  sudo apt-get clean
 }
 
 function fatal_error() {

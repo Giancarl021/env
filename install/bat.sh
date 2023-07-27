@@ -1,5 +1,5 @@
 log "Installing bat..."
 
-apt-get install bat --yes
+sudo apt-get install bat --yes
 
 log "Bat installed"

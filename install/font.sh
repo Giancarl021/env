@@ -21,7 +21,7 @@ unzip -o -q $FONT_PATH -d "$FONT_DIRECTORY"
 
 log "Copying font $FONT_NAME to system fonts directory..."
 
-yes | cp "$FONT_DIRECTORY"/*.ttf "$DESTINATION_DIRECTORY"
+sudo yes | cp "$FONT_DIRECTORY"/*.ttf "$DESTINATION_DIRECTORY"
 
 log "Removing remanescent files..."
 
@@ -30,7 +30,7 @@ rm -rf $FONT_DIRECTORY
 if [[ "$(command -v fc-cache)" ]]
 then
   log "Reseting the system font cache..."
-  fc-cache -fv
+  sudo fc-cache -fv
 fi
 
 log "Font $FONT_NAME installed on your system!"

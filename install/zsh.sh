@@ -2,7 +2,7 @@ INSTALL_ZSH_PARENT_PATH=$(cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P)
 
 log "Installing ZSH..."
 
-apt-get install zsh --yes
+sudo apt-get install zsh --yes
 
 chsh -s "$(which zsh)" $SUDO_USER
 

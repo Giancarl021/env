@@ -2,7 +2,7 @@ INSTALL_TMUX_PARENT_PATH=$(cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P)
 
 log "Installing tmux..."
 
-apt-get install tmux --yes
+sudo apt-get install tmux --yes
 
 TMUX_CONFIG_DIRECTORY="$HOME/.config/tmux"
 
