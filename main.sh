@@ -23,18 +23,18 @@ log "Temporary directory created at $TMP_DIRECTORY"
 log "Enviroment directory created at $ENV_DIRECTORY"
 
 INSTALLATION_FILES=(
-  "font",
-  "bat",
-  "imagemagick",
+  "font"
+  "bat"
+  "imagemagick"
   "python"
-  "zsh",
-  "tmux",
-  "thefuck",
-  "nvm",
+  "zsh"
+  "tmux"
+  "thefuck"
+  "nvm"
   "autojump"
 )
 
-for $FILE in $INSTALLATION_FILES
+for $FILE in ${INSTALLATION_FILES[@]}
 do
   source "$ROOT_PARENT_PATH/install/$FILE.sh"
 done
