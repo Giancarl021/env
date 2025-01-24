@@ -1,0 +1,11 @@
+{
+    "terminal.integrated.fontFamily": "'JetBrainsMono NF', 'Terminus (TTF)', 'Terminus (TTF) for Windows', 'Jetbrains Mono', 'Firecode', 'Consolas', monospace",
+    "terminal.integrated.profiles.windows": {
+        "WSL": {
+            "path": "C:\\WINDOWS\\System32\\wsl.exe",
+            "color": "terminal.ansiYellow",
+            "icon": "terminal-linux",
+            "args": ["-d", "Ubuntu", "-e", "zsh"]
+        }
+    }
+}
