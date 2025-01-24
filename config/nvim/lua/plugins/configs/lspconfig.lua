@@ -1,4 +1,4 @@
-local base = require("plugins.configs.lspconfig")
+local base = require "configs.lspconfig"
 
 local on_attach = base.on_attach
 local capabilities = base.capabilities
@@ -13,4 +13,3 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities
   }
 end
-

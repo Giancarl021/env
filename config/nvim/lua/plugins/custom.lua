@@ -1,12 +1,12 @@
 local plugins = {
-    {
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false
+  },
+  {
         "vhyrro/luarocks.nvim",
         priority = 1000,
         config = true,
-    },
-    {
-        "alexghergh/nvim-tmux-navigation",
-        lazy = false
     },
     {
         "folke/trouble.nvim",
@@ -16,14 +16,13 @@ local plugins = {
         "nvimtools/none-ls.nvim",
         event = "VeryLazy",
         opts = function()
-            return require "custom.configs.null-ls"
+            return require "plugins.configs.null-ls"
         end
     },
     {
         "neovim/nvim-lspconfig",
         config = function()
             require "plugins.configs.lspconfig"
-            require "custom.configs.lspconfig"
         end
     },
     {
